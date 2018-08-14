@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
                     libtlk_secure_hdcp_up \
                     libtsechdcp \
                     keystore.tegra \
-                    memtrack.tegra \
                     vulkan.tegra \
                     sensors.default.api_v1.3.mpl520.nvs \
                     libsensors.hal.nvs \
