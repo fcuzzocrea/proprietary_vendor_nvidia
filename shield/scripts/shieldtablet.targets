@@ -13,6 +13,7 @@ icera/bin32/icera-switcherd
 icera/bin32/downloader
 security/bin32/tlk_daemon
 security/bin32/ss_status
+security/lib/libtsec_wrapper.t124.so
 raydium/bin32/rm_ts_server
 raydium/lib/hw/ts.default.so
 raydium/lib/librm31080.so
