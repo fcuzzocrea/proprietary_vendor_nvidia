@@ -14,40 +14,12 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(TARGET_TEGRA_VERSION),t210)
-include $(CLEAR_VARS)
-LOCAL_MODULE := blob
-LOCAL_SRC_FILES := $(TARGET_DEVICE).blob
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/install
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := nvidia
-include $(BUILD_PREBUILT)
+ifeq ($(TARGET_DEVICE),foster)
+$(call add-radio-file,darcy.blob)
+$(call add-radio-file,foster_e.blob)
+$(call add-radio-file,foster_e_hdd.blob)
+else ifeq ($(TARGET_DEVICE),shieldtablet)
+$(call add-radio-file,tn8.blob)
+else ifeq ($(TARGET_DEVICE),roth)
+$(call add-radio-file,roth.blob)
 endif
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := darcy.blob
-LOCAL_SRC_FILES := darcy.blob
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/install
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := nvidia
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := foster_e.blob
-LOCAL_SRC_FILES := foster_e.blob
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/install
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := nvidia
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := foster_e_hdd.blob
-LOCAL_SRC_FILES := foster_e_hdd.blob
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(PRODUCT_OUT)/install
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := nvidia
-include $(BUILD_PREBUILT)

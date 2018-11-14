@@ -29,9 +29,6 @@ PRODUCT_PACKAGES += run_ss_status.sh \
                     hdcp2x \
                     hdcp2xtest
 
-# Bootloader update
-PRODUCT_PACKAGES += blob
-
 # Firmware
 PRODUCT_PACKAGES += \
                     model_frontal \
