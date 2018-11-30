@@ -14,11 +14,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),foster)
+ifneq ($(filter foster foster_tab,$(TARGET_DEVICE)),)
 $(call add-radio-file,darcy.blob)
 $(call add-radio-file,foster_e.blob)
 $(call add-radio-file,foster_e_hdd.blob)
-else ifeq ($(TARGET_DEVICE),shieldtablet)
+else ifneq ($(filter shieldtablet jetson-tk1,$(TARGET_DEVICE)),)
 $(call add-radio-file,tn8.blob)
 else ifeq ($(TARGET_DEVICE),roth)
 $(call add-radio-file,roth.blob)
