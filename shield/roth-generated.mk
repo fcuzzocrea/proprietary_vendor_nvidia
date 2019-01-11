@@ -13,37 +13,8 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-                    audio.primary.tegra \
-                    libnvos \
-                    libcplconnectclient \
-                    libnvoice \
-                    libnvaudiofx \
-                    gralloc.tegra \
-                    libnvddk_2d_v2 \
-                    libardrv_dynamic \
-                    libnvrm \
-                    libnvrm_graphics \
-                    libnvcms \
-                    hwcomposer.tegra \
-                    libtsechdcp \
-                    libnvtestio \
-                    libnvapputil \
-                    libnvtestresults \
                     keystore.tegra \
                     libtf_crypto_sst \
-                    nvcgcserver \
-                    libnvcpl \
-                    libnvddk_2d \
-                    libEGL_tegra \
-                    libGLESv1_CM_tegra \
-                    libGLESv2_tegra \
-                    libEGL_tegra_impl \
-                    libnvglsi \
-                    libnvwsi \
-                    libtsec_wrapper \
-                    libGLESv1_CM_tegra_impl \
-                    libGLESv2_tegra_impl \
-                    libcgdrv \
                     tf_daemon \
                     rm_ts_server \
                     librm_ts_service \
@@ -51,28 +22,9 @@ PRODUCT_PACKAGES += \
                     librm31080 \
                     glgps_nvidiaTegra2android \
                     gps.brcm \
-                    libnvmm_audio \
-                    libnvmm_utils \
-                    libnvavp \
-                    libnvfusebypass \
-                    libnvmm_service \
-                    libnvmm_manager \
-                    libnvmm \
-                    libnvmm_msaudio \
-                    libnvmm_parser \
-                    libnvmm_contentpipe \
-                    libnvmm_writer \
-                    libnvmmlite_audio \
-                    libnvmmlite_utils \
-                    libnvmmlite \
-                    libnvmmlite_image \
-                    libnvparser \
-                    libnvtvmr \
-                    libnvmmlite_video \
-                    libnvomx \
-                    libnvodm_imager \
-                    libnvodm_query \
-                    libnvomxadaptor \
-                    libnvomxilclient \
                     liboemcrypto \
+                    libnvavp \
+                    libnvos \
+                    libcplconnectclient \
+                    libnvrm \
                     libstlport
