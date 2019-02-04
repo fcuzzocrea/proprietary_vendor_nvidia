@@ -1,13 +1,12 @@
+hal/bin/hw/vendor.nvidia.hardware.graphics.composer@1.0-service
 hal/lib/hw/audio.primary.tegra.so
 hal/lib/hw/camera.tegra.so
 hal/lib/hw/gatekeeper.tlk.tegra.so
 hal/lib/hw/gralloc.tegra.so
 hal/lib/hw/hdmi_cec.tegra.so
-hal/lib/hw/hwcomposer.tegra.so
 hal/lib/hw/vulkan.tegra.so
 hal/lib64/hw/hdmi_cec.tegra.so
 hal/lib64/hw/gralloc.tegra.so
-hal/lib64/hw/hwcomposer.tegra.so
 hal/lib64/hw/gatekeeper.tlk.tegra.so
 hal/lib64/hw/keystore.v0.tegra.so
 hal/lib64/hw/keystore.v1.tegra.so
@@ -24,12 +23,10 @@ security/lib64/libtsec_wrapper.so
 graphics/lib/egl/libEGL_tegra.so
 graphics/lib/egl/libGLESv1_CM_tegra.so
 graphics/lib/egl/libGLESv2_tegra.so
-graphics/lib/libnvRSDriver.so
 graphics/lib/libnvwsi.so
 graphics/lib64/egl/libEGL_tegra.so
 graphics/lib64/egl/libGLESv1_CM_tegra.so
 graphics/lib64/egl/libGLESv2_tegra.so
-graphics/lib64/libnvRSDriver.so
 graphics/lib64/libnvwsi.so
 gps/bin64/glgps_nvidiaTegra2android
 gps/lib64/hw/gps.brcm.so

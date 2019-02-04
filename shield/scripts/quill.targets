@@ -17,12 +17,10 @@ security/bin64/ss_status
 graphics/lib/egl/libEGL_tegra.so
 graphics/lib/egl/libGLESv1_CM_tegra.so
 graphics/lib/egl/libGLESv2_tegra.so
-graphics/lib/libnvRSDriver.so
 graphics/lib/libnvwsi.so
 graphics/lib64/egl/libEGL_tegra.so
 graphics/lib64/egl/libGLESv1_CM_tegra.so
 graphics/lib64/egl/libGLESv2_tegra.so
-graphics/lib64/libnvRSDriver.so
 graphics/lib64/libnvwsi.so
 nvmm/lib/libnvmm_audio.so
 nvmm/lib/libnvmm_msaudio.so

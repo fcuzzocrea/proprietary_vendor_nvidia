@@ -73,7 +73,7 @@ echo "PRODUCT_PACKAGES += \\" > deplist_targets.txt
 echo "PRODUCT_PACKAGES += \\" > deplist_notfound.txt
 
 while read file; do
-  filename="$(echo "${file}" |sed 's/.'${TARGETVERSION}'//' |rev |cut -d. -f2- |cut -d/ -f1 |rev)"
+  filename="$(basename $(basename "${file}" ".so") ".${TARGETVERSION}")"
   if [ "${TARGETARCH}" == "aarch64" -a "$(readelf -h ../${file} |grep Machine |awk '{ print tolower($2) }')" == "arm" ]; then
     filename=${filename}_32;
   fi;
