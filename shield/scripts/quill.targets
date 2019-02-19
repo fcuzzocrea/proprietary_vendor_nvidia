@@ -1,12 +1,11 @@
+hal/bin64/hw/vendor.nvidia.hardware.graphics.composer@1.0-service
 hal/lib/hw/audio.primary.tegra.so
 hal/lib/hw/gatekeeper.trusty.tegra.so
 hal/lib/hw/gralloc.tegra.so
 hal/lib/hw/hdmi_cec.tegra.so
-hal/lib/hw/hwcomposer.tegra.so
 hal/lib/hw/vulkan.tegra.so
 hal/lib64/hw/hdmi_cec.tegra.so
 hal/lib64/hw/gralloc.tegra.so
-hal/lib64/hw/hwcomposer.tegra.so
 hal/lib64/hw/gatekeeper.trusty.tegra.so
 hal/lib64/hw/keystore.v0.tegra.so
 hal/lib64/hw/keystore.v1.tegra.so
