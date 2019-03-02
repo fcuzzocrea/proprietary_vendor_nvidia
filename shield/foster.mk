@@ -83,7 +83,8 @@ PRODUCT_PACKAGES += run_ss_status.sh \
                     eks2_darcy.dat \
                     hdcp1x \
                     hdcp2x \
-                    hdcp2xtest
+                    hdcp2xtest \
+                    vendor.nvidia.hardware.graphics.composer@1.0-service.rc
 
 # Raydium support
 PRODUCT_PACKAGES += para_10_02_00_a0 \
