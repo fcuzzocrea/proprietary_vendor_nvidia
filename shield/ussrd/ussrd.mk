@@ -24,4 +24,5 @@ PRODUCT_PACKAGES += \
     libnvgov_spincircle \
     libnvgov_tbc \
     libnvgov_ui \
-    libnvphsd
+    libnvphsd \
+    vendor.nvidia.hardware.phs@1.0-impl
