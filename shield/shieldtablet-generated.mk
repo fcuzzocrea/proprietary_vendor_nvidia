@@ -80,12 +80,11 @@ PRODUCT_PACKAGES += \
                     libnvrmapi_tegra \
                     libnvcpl \
                     libnvphs \
+                    vendor.nvidia.hardware.phs@1.0 \
                     libGLESv1_CM_tegra \
                     libglcore \
                     libw \
                     libGLESv2_tegra \
-                    libnvRSDriver \
-                    libnvRSCompiler \
                     libnvwsi \
                     glgps_nvidiaTegra2android \
                     gps.brcm \
