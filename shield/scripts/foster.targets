@@ -1,4 +1,4 @@
-hal/bin/hw/vendor.nvidia.hardware.graphics.composer@1.0-service
+hal/bin64/hw/vendor.nvidia.hardware.graphics.composer@1.0-service
 hal/lib/hw/audio.primary.tegra.so
 hal/lib/hw/camera.tegra.so
 hal/lib/hw/gatekeeper.tlk.tegra.so
