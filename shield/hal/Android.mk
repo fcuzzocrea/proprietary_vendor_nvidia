@@ -27,7 +27,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.nvidia.hardware.phs@1.0
-LOCAL_SRC_FILES := lib/hw/vendor.nvidia.hardware.phs@1.0.so
+LOCAL_SRC_FILES := lib/vendor.nvidia.hardware.phs@1.0.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_TARGET_ARCH := arm
