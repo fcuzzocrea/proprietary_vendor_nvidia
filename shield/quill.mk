@@ -39,10 +39,7 @@ PRODUCT_PACKAGES += \
                     NETA_img \
                     pmu_bl \
                     pmu_sig \
-                    nvhost_nvdec030 \
                     nvhost_nvdec030_ns \
-                    nvhost_nvdec030_prod \
-                    nvhost_nvdec_bl030_prod \
                     nvhost_nvenc061 \
                     nvhost_nvjpg011 \
                     vic04_ucode
