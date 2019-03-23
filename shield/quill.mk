@@ -49,4 +49,5 @@ PRODUCT_PACKAGES += run_ss_status.sh \
                     eks2.dat \
                     hdcp1x \
                     hdcp2x \
-                    hdcp2xtest
+                    hdcp2xtest \
+                    vendor.nvidia.hardware.graphics.composer@1.0-service.rc
