@@ -12,16 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/nvidia/common
+LOCAL_PATH := vendor/nvidia/common/audio
 
-# IPProtect is needed for audio and graphics,
-# but should only be included once
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-$(call inherit-product, $(LOCAL_PATH)/ipprotect/ipprotect.mk)
-else ifeq ($(TARGET_TEGRA_GPU),nvgpu)
-$(call inherit-product, $(LOCAL_PATH)/ipprotect/ipprotect.mk)
-endif
-
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-$(call inherit-product, $(LOCAL_PATH)/audio/audio.mk)
-endif
+DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest.xml
