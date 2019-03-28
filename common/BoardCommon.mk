@@ -21,3 +21,7 @@ include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
 else ifeq ($(TARGET_TEGRA_GPU),nvgpu)
 include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
 endif
+
+ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
+include $(COMMON_PATH)/audio/BoardAudio.mk
+endif
