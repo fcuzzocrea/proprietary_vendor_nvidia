@@ -12,24 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := vendor/nvidia/common
+PRODUCT_PACKAGES += \
+                    android.hardware.gatekeeper@1.0-impl \
+                    android.hardware.gatekeeper@1.0-service \
+                    android.hardware.keymaster@3.0-impl \
+                    android.hardware.keymaster@3.0-service \
+                    gatekeeper.tlk.tegra \
+                    gatekeeper.trusty.tegra \
+                    keystore.v0.tegra
 
-# IPProtect is needed for audio and graphics,
-# but should only be included once
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
-else ifeq ($(TARGET_TEGRA_GPU),nvgpu)
-include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
-endif
-
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-include $(COMMON_PATH)/audio/BoardAudio.mk
-endif
-
-ifeq ($(TARGET_TEGRA_CEC),nvhdmi)
-include $(COMMON_PATH)/hdmi/BoardHdmi.mk
-endif
-
-ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore)
-include $(COMMON_PATH)/keystore/BoardKeystore.mk
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=v0.tegra

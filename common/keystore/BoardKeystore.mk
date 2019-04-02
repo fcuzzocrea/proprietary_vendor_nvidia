@@ -12,24 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := vendor/nvidia/common
+LOCAL_PATH := vendor/nvidia/common/keystore
 
-# IPProtect is needed for audio and graphics,
-# but should only be included once
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
-else ifeq ($(TARGET_TEGRA_GPU),nvgpu)
-include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
-endif
-
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-include $(COMMON_PATH)/audio/BoardAudio.mk
-endif
-
-ifeq ($(TARGET_TEGRA_CEC),nvhdmi)
-include $(COMMON_PATH)/hdmi/BoardHdmi.mk
-endif
-
-ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore)
-include $(COMMON_PATH)/keystore/BoardKeystore.mk
-endif
+DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest.xml
