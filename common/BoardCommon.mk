@@ -33,3 +33,7 @@ endif
 ifeq ($(TARGET_TEGRA_GPS),brcm)
 include $(COMMON_PATH)/gps/BoardGps.mk
 endif
+
+ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore)
+include $(COMMON_PATH)/keystore/BoardKeystore.mk
+endif
