@@ -12,24 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := vendor/nvidia/common
+PRODUCT_PACKAGES += \
+                    android.hardware.tv.cec@1.0-service \
+                    android.hardware.tv.cec@1.0-impl \
+                    hdmi_cec.tegra
 
-# IPProtect is needed for audio and graphics,
-# but should only be included once
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
-else ifeq ($(TARGET_TEGRA_GPU),nvgpu)
-include $(COMMON_PATH)/ipprotect/BoardIPProtect.mk
-endif
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
 
-ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
-include $(COMMON_PATH)/audio/BoardAudio.mk
-endif
-
-ifeq ($(TARGET_TEGRA_CEC),nvhdmi)
-include $(COMMON_PATH)/hdmi/BoardHdmi.mk
-endif
-
-ifeq ($(TARGET_TEGRA_GPS),brcm)
-include $(COMMON_PATH)/gps/BoardGps.mk
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hdmi.device_type=4 \
+    ro.hdmi.one_touch_play_on_home=0 \
+    persist.sys.hdmi.keep_awake=0 \
+    ro.hdmi.wake_on_hotplug=0
