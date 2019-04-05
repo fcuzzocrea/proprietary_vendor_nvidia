@@ -30,16 +30,7 @@ PRODUCT_PACKAGES += \
 
 # Libs
 PRODUCT_PACKAGES += \
-    libnvwifi-service \
-    vendor.nvidia.hardware.shieldtech.inputflinger@1.0-service \
-    vendor.nvidia.hardware.shieldtech.inputflinger@1.0-service.rc \
-    vendor.nvidia.hardware.shieldtech.inputflinger@1.0 \
-    vendor.nvidia.hardware.shieldtech.input@1.0
-
-ifeq ($(TARGET_ARCH),arm64)
-PRODUCT_PACKAGES += \
-    vendor.nvidia.hardware.shieldtech.inputflinger@1.0_32
-endif
+    libnvwifi-service
 
 # Controller firmware updates
 PRODUCT_COPY_FILES += \
