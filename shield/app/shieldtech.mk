@@ -20,6 +20,10 @@ PRODUCT_PACKAGES += \
                     NvShieldTech \
                     TegraZone_Next
 
+ifeq ($(PRODUCT_IS_ATV),true)
+    PRODUCT_PACKAGES += NvAudioSvc
+endif
+
 # Libs
 PRODUCT_PACKAGES += \
     libfirmwareupdate \
