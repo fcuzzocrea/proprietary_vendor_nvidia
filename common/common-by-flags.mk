@@ -74,3 +74,7 @@ endif
 ifeq ($(TARGET_TEGRA_TOUCH),raydium)
 $(call inherit-product, $(LOCAL_PATH)/raydium/raydium.mk)
 endif
+
+ifeq ($(TARGET_TEGRA_WIDEVINE),true)
+$(call inherit-product, $(LOCAL_PATH)/widevine/widevine.mk)
+endif
