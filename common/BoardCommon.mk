@@ -42,6 +42,10 @@ ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore)
 include $(COMMON_PATH)/keystore/BoardKeystore.mk
 endif
 
+ifeq ($(TARGET_TEGRA_MEMTRACK),nvmemtrack)
+include $(COMMON_PATH)/memtrack/BoardMemtrack.mk
+endif
+
 ifneq ($(filter $(TARGET_TEGRA_OMX), nvmm nvmm64),)
 include $(COMMON_PATH)/nvmm/BoardNvmm.mk
 endif
