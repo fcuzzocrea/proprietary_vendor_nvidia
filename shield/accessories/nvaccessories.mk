@@ -12,12 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SHIELD_PATH := vendor/nvidia/shield
+PRODUCT_PACKAGES += \
+                    NvAccessories \
+                    NvAccProxy \
+                    NvShieldService \
+                    vendor.nvidia.hardware.nvwifi@1.0
 
-ifeq ($(TARGET_TEGRA_NVACCESSORIES),true)
-include $(SHIELD_PATH)/accessories/BoardAccessories.mk
+ifeq ($(TARGET_TEGRA_VARIANT),shield)
+ifeq ($(PRODUCT_IS_ATV),true)
+PRODUCT_PACKAGES += AccessoryUiTv
 endif
-
-ifeq ($(NV_ANDROID_FRAMEWORK_ENHANCEMENTS),true)
-include $(SHIELD_PATH)/shieldtech/BoardShieldTech.mk
 endif
