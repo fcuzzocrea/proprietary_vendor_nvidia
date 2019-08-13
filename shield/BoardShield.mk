@@ -12,12 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/nvidia/shield
+SHIELD_PATH := vendor/nvidia/shield
 
 ifeq ($(NV_ANDROID_FRAMEWORK_ENHANCEMENTS),true)
-$(call inherit-product, $(LOCAL_PATH)/shieldtech/shieldtech.mk)
-endif
-
-ifeq ($(TARGET_TEGRA_TEGRAZONE),true)
-$(call inherit-product, $(LOCAL_PATH)/TegraZone/tegrazone.mk)
+include $(SHIELD_PATH)/shieldtech/BoardShieldTech.mk
 endif
