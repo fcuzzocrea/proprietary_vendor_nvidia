@@ -12,12 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/nvidia/shield
-
-ifeq ($(NV_ANDROID_FRAMEWORK_ENHANCEMENTS),true)
-$(call inherit-product, $(LOCAL_PATH)/shieldtech/shieldtech.mk)
-endif
-
-ifeq ($(TARGET_TEGRA_TEGRAZONE),true)
-$(call inherit-product, $(LOCAL_PATH)/TegraZone/tegrazone.mk)
-endif
+PRODUCT_PACKAGES += \
+                    NvShieldTech \
+                    vendor.nvidia.hardware.shieldtech.inputflinger@2.0-service \
+                    vendor.nvidia.hardware.shieldtech.rpx@1.0-service \
+                    com.nvidia.shieldtech.xml
