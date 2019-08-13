@@ -22,6 +22,10 @@ ifeq ($(TARGET_TEGRA_VARIANT),shield)
 $(call inherit-product, $(LOCAL_PATH)/flynn/flynn.mk)
 endif
 
+ifeq ($(TARGET_TEGRA_NVACCESSORIES),true)
+$(call inherit-product, $(LOCAL_PATH)/accessories/nvaccessories.mk)
+endif
+
 ifeq ($(TARGET_TEGRA_TEGRAZONE),true)
 $(call inherit-product, $(LOCAL_PATH)/TegraZone/tegrazone.mk)
 endif

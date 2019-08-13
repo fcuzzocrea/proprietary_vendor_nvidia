@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SHIELD_PATH := vendor/nvidia/shield
+LOCAL_PATH := vendor/nvidia/shield/accessories
 
-ifeq ($(TARGET_TEGRA_NVACCESSORIES),true)
-include $(SHIELD_PATH)/accessories/BoardAccessories.mk
-endif
-
-ifeq ($(NV_ANDROID_FRAMEWORK_ENHANCEMENTS),true)
-include $(SHIELD_PATH)/shieldtech/BoardShieldTech.mk
-endif
+DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest.xml
