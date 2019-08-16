@@ -12,21 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/nvidia/shield
+LOCAL_PATH := $(call my-dir)
 
-ifeq ($(NV_ANDROID_FRAMEWORK_ENHANCEMENTS),true)
-$(call inherit-product, $(LOCAL_PATH)/shieldtech/shieldtech.mk)
-endif
-
-ifeq ($(TARGET_TEGRA_VARIANT),shield)
-$(call inherit-product, $(LOCAL_PATH)/beyonder/beyonder.mk)
-$(call inherit-product, $(LOCAL_PATH)/flynn/flynn.mk)
-endif
-
-ifeq ($(TARGET_TEGRA_NVACCESSORIES),true)
-$(call inherit-product, $(LOCAL_PATH)/accessories/nvaccessories.mk)
-endif
-
-ifeq ($(TARGET_TEGRA_TEGRAZONE),true)
-$(call inherit-product, $(LOCAL_PATH)/TegraZone/tegrazone.mk)
-endif
+include $(CLEAR_VARS)
+LOCAL_MODULE               := BeyonderServer
+LOCAL_MODULE_TAGS          := optional
+LOCAL_SRC_FILES            := app/BeyonderServer.apk
+LOCAL_CERTIFICATE          := PRESIGNED
+LOCAL_MODULE_CLASS         := APPS
+LOCAL_MODULE_SUFFIX        := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_PRIVILEGED_MODULE    := true
+include $(BUILD_NVIDIA_PREBUILT)
