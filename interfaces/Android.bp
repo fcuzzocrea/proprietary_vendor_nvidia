@@ -1,0 +1,64 @@
+//
+// Copyright (c) 2017-2018, NVIDIA CORPORATION.  All rights reserved.
+//
+// NVIDIA CORPORATION and its licensors retain all intellectual property
+// and proprietary rights in and to this software, related documentation
+// and any modifications thereto.  Any use, reproduction, disclosure or
+// distribution of this software and related documentation without an express
+// license agreement from NVIDIA CORPORATION is strictly prohibited.
+//
+
+hidl_package_root {
+    name: "vendor.nvidia.hardware",
+    path: "vendor/nvidia/interfaces",
+}
+
+subdirs = [
+    "automotive/audiocontrol/1.0",
+    "automotive/audiocontrol/1.0/default",
+    "automotive/evs/1.0",
+    "automotive/vehicle/2.0",
+    "automotive/vehicle/2.0/default/impl/vhal_v2_0/proto",
+    "camera/argus/service/1.0",
+    "camera/argus/service/1.0/default",
+    "camera/device/3.2",
+    "camera/device/3.2/default",
+    "camera/provider/2.4",
+    "camera/provider/2.4/default",
+    "cpl/service/1.0",
+    "cpl/tools/1.0",
+    "cpl/interfacecb/1.0",
+    "graphics",
+    "media",
+    "hubcore/1.0",
+    "hubcore/1.0/default",
+    "keymaster",
+    "keymaster/3.0",
+    "power/1.0",
+    "power/1.0/default",
+    "phs/1.0",
+    "phs/1.0/default",
+    "bluetooth",
+    "usb",
+    "nvwifi",
+    "shieldtech/inputflinger/1.0",
+    "shieldtech/inputflinger/2.0",
+    "shieldtech/input/1.0",
+    "shieldtech/rpx/1.0",
+    "gensysfs/1.0",
+    "gensysfs/1.0/default",
+    "sensors/1.0",
+    "sensors/1.0/default",
+    "boot/1.0",
+    "boot/1.0/default",
+    "thermal/1.0",
+    "thermal/1.0/default",
+    "flynn/1.0",
+    "thermalservice/1.0",
+    "thermalservice/1.0/default",
+    "health/2.0/default",
+    "factoryservice/1.0",
+    "factoryservice/1.0/default",
+    "convertibleport/1.0",
+    "convertibleport/1.0/default",
+]
