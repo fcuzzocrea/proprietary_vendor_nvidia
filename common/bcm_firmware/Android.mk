@@ -103,3 +103,14 @@ LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_COMMON_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := fw_brcmfmac_4356_icosa
+LOCAL_SRC_FILES            := bcm4356/fw_brcmfmac_4356_icosa.bin
+LOCAL_MODULE_STEM          := brcmfmac4356-pcie
+LOCAL_MODULE_SUFFIX        := .bin
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/brcm-icosa
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_COMMON_PREBUILT)
