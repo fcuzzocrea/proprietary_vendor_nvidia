@@ -20,4 +20,5 @@ PRODUCT_PACKAGES += \
                     bcm4350 \
                     bcm4356 \
                     fw_bcmdhd_4356 \
-                    brcmfmac4356-pcie
+                    brcmfmac4356-pcie \
+                    fw_brcmfmac_4356_icosa
