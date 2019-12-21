@@ -19,4 +19,5 @@ PRODUCT_PACKAGES += \
                     nvram_loki_e_4354 \
                     nvram_loki_e_antenna_tuned_4354 \
                     nvram_jetsonE_cv_4354 \
-                    brcmfmac4356-pcie.txt
+                    brcmfmac4356-pcie.txt \
+                    nvram_icosa_4356
