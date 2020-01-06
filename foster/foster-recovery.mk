@@ -14,4 +14,4 @@
 
 # Firmware
 PRODUCT_COPY_FILES += \
-                      vendor/nvidia/foster/firmware/hekate.bin:recovery/root/etc/firmware/reboot_payload.bin
+                      vendor/nvidia/foster/firmware/hekate.bin:recovery/root/system/etc/firmware/reboot_payload.bin

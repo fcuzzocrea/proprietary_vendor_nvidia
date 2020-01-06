@@ -14,4 +14,4 @@
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/firmware/xusb/tegra18x_xusb_firmware:recovery/root/etc/firmware/tegra18x_xusb_firmware
+    $(LOCAL_PATH)/firmware/xusb/tegra18x_xusb_firmware:recovery/root/system/etc/firmware/tegra18x_xusb_firmware
