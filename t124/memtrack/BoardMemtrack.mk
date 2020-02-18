@@ -12,20 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := vendor/nvidia/t124
+LOCAL_PATH := vendor/nvidia/t124/memtrack
 
-ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
-include $(COMMON_PATH)/camera/BoardCamera.mk
-endif
-
-ifeq ($(TARGET_TEGRA_MEMTRACK),nvmemtrack-t124)
-include $(COMMON_PATH)/memtrack/BoardMemtrack.mk
-endif
-
-ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
-include $(COMMON_PATH)/nvgpu/BoardNvgpu.mk
-endif
-
-ifeq ($(TARGET_TEGRA_OMX),nvmm-t124)
-include $(COMMON_PATH)/nvmm/BoardNvmm.mk
-endif
+DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest.xml
