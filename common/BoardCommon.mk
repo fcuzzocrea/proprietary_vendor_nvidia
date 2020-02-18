@@ -26,6 +26,10 @@ ifeq ($(TARGET_TEGRA_AUDIO),nvaudio)
 include $(COMMON_PATH)/audio/BoardAudio.mk
 endif
 
+ifeq ($(TARGET_TEGRA_GPS),brcm)
+include $(COMMON_PATH)/gps/BoardGps.mk
+endif
+
 ifeq ($(TARGET_TEGRA_CAMERA),nvcamera)
 include $(COMMON_PATH)/camera/BoardCamera.mk
 endif
