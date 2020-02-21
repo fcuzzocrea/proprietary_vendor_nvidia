@@ -25,6 +25,16 @@ LOCAL_VENDOR_MODULE        := true
 include $(BUILD_NVIDIA_COMMON_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := rm_panel_setting
+LOCAL_SRC_FILES            := bin32/rm_panel_setting.ini
+LOCAL_MODULE_CLASS         := EXECUTABLES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_COMMON_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := ts.default
 LOCAL_SRC_FILES            := lib/hw/ts.default.so
 LOCAL_MODULE_SUFFIX        := .so
@@ -267,13 +277,3 @@ LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 include $(BUILD_NVIDIA_COMMON_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE               := touch_para_10
-LOCAL_SRC_FILES            := lib/touch_para_10.so
-LOCAL_MODULE_SUFFIX        := .so
-LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
-LOCAL_MODULE_TARGET_ARCH   := arm
-LOCAL_MODULE_TAGS          := optional
-LOCAL_MODULE_OWNER         := nvidia
-LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_COMMON_PREBUILT)
