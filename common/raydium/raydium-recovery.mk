@@ -33,5 +33,4 @@ PRODUCT_COPY_FILES += \
                       $(LOCAL_PATH)/lib/para_10_09_01_c0.so:recovery/root/sbin32/para_10_09_01_c0.so \
                       $(LOCAL_PATH)/lib/para_10_09_02_c0.so:recovery/root/sbin32/para_10_09_02_c0.so \
                       $(LOCAL_PATH)/lib/para_10_0a_00_b0.so:recovery/root/sbin32/para_10_0a_00_b0.so \
-                      $(LOCAL_PATH)/lib/para_10_0b_00_a0.so:recovery/root/sbin32/para_10_0b_00_a0.so \
-                      $(LOCAL_PATH)/lib/touch_para_10.so:recovery/root/sbin32/touch_para_10.so
+                      $(LOCAL_PATH)/lib/para_10_0b_00_a0.so:recovery/root/sbin32/para_10_0b_00_a0.so
