@@ -26,10 +26,6 @@ ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore-t124)
 $(call inherit-product, $(LOCAL_PATH)/keystore/keystore.mk)
 endif
 
-ifeq ($(TARGET_TEGRA_OMX),nvmm-t124)
-$(call inherit-product, $(LOCAL_PATH)/nvmm/nvmm.mk)
-endif
-
 ifeq ($(TARGET_TEGRA_SENSORS),fusion520)
 $(call inherit-product, $(LOCAL_PATH)/sensors/fusion.mk)
 endif
