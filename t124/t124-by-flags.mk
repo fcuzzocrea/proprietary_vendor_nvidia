@@ -18,10 +18,6 @@ ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
 $(call inherit-product, $(LOCAL_PATH)/camera/nvcamera.mk)
 endif
 
-ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
-$(call inherit-product, $(LOCAL_PATH)/nvgpu/nvgpu.mk)
-endif
-
 ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore-t124)
 $(call inherit-product, $(LOCAL_PATH)/keystore/keystore.mk)
 endif
