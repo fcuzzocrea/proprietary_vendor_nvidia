@@ -12,24 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := vendor/nvidia/t124
-
-ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
-include $(COMMON_PATH)/camera/BoardCamera.mk
-endif
-
-ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore-t124)
-include $(COMMON_PATH)/keystore/BoardKeystore.mk
-endif
-
-ifeq ($(TARGET_TEGRA_MEMTRACK),nvmemtrack-t124)
-include $(COMMON_PATH)/memtrack/BoardMemtrack.mk
-endif
-
-ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
-include $(COMMON_PATH)/nvgpu/BoardNvgpu.mk
-endif
-
-ifeq ($(TARGET_TEGRA_OMX),nvmm-t124)
-include $(COMMON_PATH)/nvmm/BoardNvmm.mk
-endif
+PRODUCT_PACKAGES += \
+                    android.hardware.keymaster@3.0-impl \
+                    android.hardware.keymaster@3.0-service \
+                    keystore.tegra

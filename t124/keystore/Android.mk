@@ -12,24 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := vendor/nvidia/t124
+LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
-include $(COMMON_PATH)/camera/BoardCamera.mk
-endif
-
-ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore-t124)
-include $(COMMON_PATH)/keystore/BoardKeystore.mk
-endif
-
-ifeq ($(TARGET_TEGRA_MEMTRACK),nvmemtrack-t124)
-include $(COMMON_PATH)/memtrack/BoardMemtrack.mk
-endif
-
-ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
-include $(COMMON_PATH)/nvgpu/BoardNvgpu.mk
-endif
-
-ifeq ($(TARGET_TEGRA_OMX),nvmm-t124)
-include $(COMMON_PATH)/nvmm/BoardNvmm.mk
-endif
+include $(CLEAR_VARS)
+LOCAL_MODULE               := keystore.tegra
+LOCAL_SRC_FILES            := lib/hw/keystore.tegra.so
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+LOCAL_MODULE_RELATIVE_PATH := hw
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
