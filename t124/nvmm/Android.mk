@@ -48,6 +48,28 @@ LOCAL_VENDOR_MODULE        := true
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := libnvmm_asfparser
+LOCAL_SRC_FILES            := lib/libnvmm_asfparser.so
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := libnvmm_aviparser
+LOCAL_SRC_FILES            := lib/libnvmm_aviparser.so
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmm_contentpipe
 LOCAL_SRC_FILES            := lib/libnvmm_contentpipe.so
 LOCAL_MODULE_SUFFIX        := .so
@@ -136,6 +158,17 @@ LOCAL_VENDOR_MODULE        := true
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := libnvmmlite_msaudio
+LOCAL_SRC_FILES            := lib/libnvmmlite_msaudio.so
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmmlite_utils
 LOCAL_SRC_FILES            := lib/libnvmmlite_utils.so
 LOCAL_MODULE_SUFFIX        := .so
@@ -215,6 +248,17 @@ include $(BUILD_NVIDIA_ARCH_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvtvmr
 LOCAL_SRC_FILES            := lib/libnvtvmr.so
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := libnvvpp
+LOCAL_SRC_FILES            := lib/libnvvpp.so
 LOCAL_MODULE_SUFFIX        := .so
 LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TARGET_ARCH   := arm
