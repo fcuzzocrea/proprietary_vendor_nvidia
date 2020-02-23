@@ -14,16 +14,28 @@
 
 PRODUCT_PACKAGES += \
                     android.hardware.media.omx@1.0-service \
+                    libnvavp.so \
+                    libnvmm \
                     libnvmm_audio \
+                    libnvmm_contentpipe \
+                    libnvmm_utils \
                     libnvmm_msaudio \
                     libnvmm_parser \
                     libnvmm_writer \
+                    libnvmmlite \
                     libnvmmlite_audio \
+                    libnvmm_asfparser \
+                    libnvmm_aviparser \
                     libnvmmlite_image \
+                    libnvmmlite_msaudio \
+                    libnvmmlite_utils \
                     libnvmmlite_video \
                     libnvomx \
                     libnvomxadaptor \
                     libnvomxilclient \
+                    libnvtnr \
+                    libnvtvmr \
+                    libnvvpp \
                     libstagefrighthw
 
 PRODUCT_PROPERTY_OVERRIDES += \
