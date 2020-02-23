@@ -15,6 +15,39 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := hdcp1x
+LOCAL_SRC_FILES            := etc/hdcpsrm/hdcp1x.srm
+LOCAL_MODULE_SUFFIX        := .srm
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+LOCAL_MODULE_RELATIVE_PATH := hdcpsrm
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := hdcp2x
+LOCAL_SRC_FILES            := etc/hdcpsrm/hdcp2x.srm
+LOCAL_MODULE_SUFFIX        := .srm
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+LOCAL_MODULE_RELATIVE_PATH := hdcpsrm
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := hdcp2xtest
+LOCAL_SRC_FILES            := etc/hdcpsrm/hdcp2xtest.srm
+LOCAL_MODULE_SUFFIX        := .srm
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+LOCAL_MODULE_RELATIVE_PATH := hdcpsrm
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := ss_status
 LOCAL_SRC_FILES            := bin32/ss_status
 LOCAL_MODULE_CLASS         := EXECUTABLES
@@ -27,6 +60,16 @@ include $(BUILD_NVIDIA_ARCH_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE               := tlk_daemon
 LOCAL_SRC_FILES            := bin32/tlk_daemon
+LOCAL_MODULE_CLASS         := EXECUTABLES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := eks2_client
+LOCAL_SRC_FILES            := bin32/eks2_client
 LOCAL_MODULE_CLASS         := EXECUTABLES
 LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
@@ -59,6 +102,17 @@ include $(BUILD_NVIDIA_ARCH_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libtsechdcp
 LOCAL_SRC_FILES            := lib/libtsechdcp.so
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := libnvsi_ll_2
+LOCAL_SRC_FILES            := lib/libnvsi_ll_2.so
 LOCAL_MODULE_SUFFIX        := .so
 LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TARGET_ARCH   := arm
