@@ -25,10 +25,13 @@ PRODUCT_PACKAGES += \
                     nvavp_os_8ff00000 \
                     nvavp_os_eff00000 \
                     nvavp_os_f7e00000 \
+                    nvavp_vid_ucode \
                     nvavp_vid_ucode_alt
 
 # Xusb firmware
-PRODUCT_PACKAGES += tegra12x_xusb_firmware
+PRODUCT_PACKAGES += \
+                    tegra_xusb_firmware \
+                    tegra12x_xusb_firmware
 
 # GPU firmware
 PRODUCT_PACKAGES += \
@@ -42,6 +45,12 @@ PRODUCT_PACKAGES += \
                     nvhost_msenc031 \
                     nvhost_tsec \
                     vic03_ucode
+
+PRODUCT_PACKAGES += \
+                    maxim_fp35 \
+                    touch_fusion \
+                    sd8797_uapsta \
+                    sd8897_uapsta
 
 # Oemcrypto
 ifeq ($(TARGET_TEGRA_WIDEVINE),true)

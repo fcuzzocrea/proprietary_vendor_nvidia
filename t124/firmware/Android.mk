@@ -15,6 +15,16 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := maxim_fp35
+LOCAL_SRC_FILES            := maxim_fp35.bin
+LOCAL_MODULE_SUFFIX        := .bin
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := nvavp_aacdec_ucode
 LOCAL_SRC_FILES            := nvavp_aacdec_ucode.bin
 LOCAL_MODULE_SUFFIX        := .bin
@@ -85,6 +95,16 @@ LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := nvavp_vid_ucode
+LOCAL_SRC_FILES            := nvavp_vid_ucode.bin
+LOCAL_MODULE_SUFFIX        := .bin
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := nvavp_vid_ucode_alt
 LOCAL_SRC_FILES            := nvavp_vid_ucode_alt.bin
 LOCAL_MODULE_SUFFIX        := .bin
@@ -95,8 +115,47 @@ LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := sd8797_uapsta
+LOCAL_SRC_FILES            := sd8797_uapsta.bin
+LOCAL_MODULE_SUFFIX        := .bin
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := sd8897_uapsta
+LOCAL_SRC_FILES            := sd8897_uapsta.bin
+LOCAL_MODULE_SUFFIX        := .bin
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := tegra_xusb_firmware
+LOCAL_SRC_FILES            := tegra_xusb_firmware
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := tegra12x_xusb_firmware
 LOCAL_SRC_FILES            := tegra12x_xusb_firmware
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := touch_fusion
+LOCAL_SRC_FILES            := touch_fusion.cfg
+LOCAL_MODULE_SUFFIX        := .cfg
 LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
 LOCAL_MODULE_TAGS          := optional
