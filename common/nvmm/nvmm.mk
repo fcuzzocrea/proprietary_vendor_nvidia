@@ -17,3 +17,6 @@ PRODUCT_PACKAGES += \
     libnvomx \
     libnvomxilclient \
     libstagefrighthw
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=0
