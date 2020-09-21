@@ -16,6 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := keystore.tegra
+LOCAL_VINTF_FRAGMENTS      := android.hardware.keymaster@3.0-service.xml
 LOCAL_SRC_FILES_32         := lib/hw/keystore.tegra.so
 LOCAL_MULTILIB             := 32
 LOCAL_MODULE_SUFFIX        := .so

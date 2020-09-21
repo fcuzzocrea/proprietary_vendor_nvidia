@@ -16,10 +16,12 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := vendor.nvidia.hardware.graphics.composer@2.0-service
+LOCAL_VINTF_FRAGMENTS      := vendor.nvidia.hardware.graphics.composer@2.0-service.xml
 LOCAL_SRC_FILES_32         := bin32/hw/vendor.nvidia.hardware.graphics.composer@2.0-service
 ifeq ($(TARGET_TEGRA_DOLBY),true)
 LOCAL_SRC_FILES_64         := bin64/hw/vendor.nvidia.hardware.graphics.composer@2.0-service
 LOCAL_INIT_RC              := etc/init/vendor.nvidia.hardware.graphics.composer@2.0-service.rc
+LOCAL_VINTF_FRAGMENTS      += vendor.nvidia.hardware.graphics.mempool@1.0.xml
 else
 LOCAL_SRC_FILES_64         := bin64/hw/vendor.nvidia.hardware.graphics.composer@2.0-service.nodolby
 LOCAL_INIT_RC              := etc/init/vendor.nvidia.hardware.graphics.composer@2.0-service.nodolby.rc

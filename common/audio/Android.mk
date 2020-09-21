@@ -39,6 +39,7 @@ LOCAL_MODULE               := android.hardware.audio@4.0-service-msd
 LOCAL_SRC_FILES_32         := bin32/hw/android.hardware.audio@4.0-service-msd
 LOCAL_MULTILIB             := 32
 LOCAL_INIT_RC              := etc/init/android.hardware.audio@4.0-service-msd.rc
+LOCAL_VINTF_FRAGMENTS      := android.hardware.audio@4.0-service-msd.xml
 LOCAL_MODULE_CLASS         := EXECUTABLES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
@@ -53,6 +54,7 @@ ifeq ($(TARGET_TEGRA_DOLBY),true)
 LOCAL_SRC_FILES            := lib/hw/audio.primary.tegra.so
 else
 LOCAL_SRC_FILES            := lib/hw/audio.primary.tegra.nodolby.so
+LOCAL_VINTF_FRAGMENTS      := android.hardware.audio@2.0-service.xml
 endif
 LOCAL_MODULE_SUFFIX        := .so
 LOCAL_MODULE_CLASS         := SHARED_LIBRARIES

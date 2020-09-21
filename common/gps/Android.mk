@@ -27,6 +27,7 @@ include $(BUILD_NVIDIA_COMMON_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE               := gps.brcm
 LOCAL_SRC_FILES            := lib/hw/gps.brcm.so
+LOCAL_VINTF_FRAGMENTS      := android.hardware.gnss@1.0-service.xml
 LOCAL_MODULE_SUFFIX        := .so
 LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TARGET_ARCH   := arm

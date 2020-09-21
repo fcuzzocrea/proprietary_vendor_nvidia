@@ -227,6 +227,7 @@ include $(BUILD_NVIDIA_COMMON_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libstagefrighthw
+LOCAL_VINTF_FRAGMENTS      := android.hardware.media.omx@1.0-service.xml
 LOCAL_SRC_FILES_32         := lib/libstagefrighthw.so
 LOCAL_MULTILIB             := 32
 LOCAL_MODULE_SUFFIX        := .so

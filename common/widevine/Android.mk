@@ -16,6 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := android.hardware.drm@1.1-service.widevine
+LOCAL_VINTF_FRAGMENTS      := android.hardware.drm@1.0-service.xml
 LOCAL_SRC_FILES_32         := bin32/hw/android.hardware.drm@1.1-service.widevine
 LOCAL_MULTILIB             := 32
 LOCAL_INIT_RC              := etc/init/android.hardware.drm@1.1-service.widevine.rc

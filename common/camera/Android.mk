@@ -18,6 +18,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE               := vendor.nvidia.hardware.camera.provider@2.4-service
 LOCAL_SRC_FILES            := bin64/vendor.nvidia.hardware.camera.provider@2.4-service
 LOCAL_INIT_RC              := etc/init/vendor.nvidia.hardware.camera.provider@2.4-service.rc
+LOCAL_VINTF_FRAGMENTS      := vendor.nvidia.hardware.camera.provider@2.4-service.xml
 LOCAL_MODULE_CLASS         := EXECUTABLES
 LOCAL_MODULE_TARGET_ARCH   := arm64
 LOCAL_MODULE_TAGS          := optional

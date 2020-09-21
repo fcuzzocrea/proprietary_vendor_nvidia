@@ -26,6 +26,7 @@ include $(BUILD_NVIDIA_COMMON_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := vendor.nvidia.hardware.cpl.service@1.0-service
+LOCAL_VINTF_FRAGMENTS      := vendor.nvidia.hardware.cpl.service@1.0-service.xml
 LOCAL_SRC_FILES_32         := bin32/hw/vendor.nvidia.hardware.cpl.service@1.0-service
 LOCAL_SRC_FILES_64         := bin64/hw/vendor.nvidia.hardware.cpl.service@1.0-service
 LOCAL_MULTILIB             := first

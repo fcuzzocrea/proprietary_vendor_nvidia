@@ -26,6 +26,7 @@ include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := NvAccessories
+LOCAL_VINTF_FRAGMENTS      := vendor.nvidia.hardware.nvwifi@1.0.xml
 LOCAL_MODULE_TAGS          := optional
 LOCAL_SRC_FILES            := app/NvAccessories.apk
 LOCAL_CERTIFICATE          := PRESIGNED

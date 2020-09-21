@@ -16,6 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := android.hardware.keymaster@3.0-service.tegra
+LOCAL_VINTF_FRAGMENTS      := android.hardware.keymaster@3.0-service.xml
 LOCAL_SRC_FILES_32         := bin32/hw/android.hardware.keymaster@3.0-service.tegra
 LOCAL_SRC_FILES_64         := bin64/hw/android.hardware.keymaster@3.0-service.tegra
 LOCAL_MULTILIB             := first
@@ -29,6 +30,7 @@ include $(BUILD_NVIDIA_COMMON_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := gatekeeper.tlk.tegra
+LOCAL_VINTF_FRAGMENTS      := android.hardware.gatekeeper@1.0-service.xml
 LOCAL_SRC_FILES_32         := lib/hw/gatekeeper.tlk.tegra.so
 LOCAL_SRC_FILES_64         := lib64/hw/gatekeeper.tlk.tegra.so
 LOCAL_MULTILIB             := both

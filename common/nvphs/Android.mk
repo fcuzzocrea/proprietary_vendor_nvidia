@@ -28,6 +28,7 @@ include $(BUILD_NVIDIA_COMMON_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := vendor.nvidia.hardware.phs@1.0-impl
+LOCAL_VINTF_FRAGMENTS      := nvphsd.xml
 LOCAL_SRC_FILES_32         := lib/vendor.nvidia.hardware.phs@1.0-impl.so
 LOCAL_SRC_FILES_64         := lib64/vendor.nvidia.hardware.phs@1.0-impl.so
 LOCAL_MULTILIB             := both

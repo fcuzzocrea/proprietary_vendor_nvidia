@@ -16,6 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := vendor.nvidia.hardware.ipprotect@1.0-service
+LOCAL_VINTF_FRAGMENTS      := vendor.nvidia.hardware.ipprotect@1.0-service.xml
 LOCAL_SRC_FILES_32         := bin32/hw/vendor.nvidia.hardware.ipprotect@1.0-service
 LOCAL_SRC_FILES_64         := bin64/hw/vendor.nvidia.hardware.ipprotect@1.0-service
 LOCAL_MULTILIB             := first

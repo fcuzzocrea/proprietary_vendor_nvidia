@@ -28,6 +28,7 @@ include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := hwcomposer.tegra
+LOCAL_VINTF_FRAGMENTS      := android.hardware.graphics.composer@2.1-service.xml
 LOCAL_SRC_FILES            := lib/hw/hwcomposer.tegra.so
 LOCAL_MODULE_SUFFIX        := .so
 LOCAL_MODULE_CLASS         := SHARED_LIBRARIES

@@ -25,6 +25,7 @@ include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := camera.tegra
+LOCAL_VINTF_FRAGMENTS      := android.hardware.camera.provider@2.4-service.xml
 LOCAL_SRC_FILES            := lib/hw/camera.tegra.so
 LOCAL_MODULE_SUFFIX        := .so
 LOCAL_MODULE_CLASS         := SHARED_LIBRARIES

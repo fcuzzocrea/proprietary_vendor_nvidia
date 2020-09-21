@@ -16,6 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := memtrack.tegra
+LOCAL_VINTF_FRAGMENTS      := android.hardware.memtrack@1.0-service-nvidia.xml
 LOCAL_SRC_FILES_32         := lib/hw/memtrack.tegra.so
 LOCAL_SRC_FILES_64         := lib64/hw/memtrack.tegra.so
 LOCAL_MULTILIB             := both
