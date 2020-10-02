@@ -29,3 +29,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.tegra.nvmmlite=1 \
     persist.media.treble_omx=false
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=0
